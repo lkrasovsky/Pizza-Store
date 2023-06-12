@@ -17,8 +17,8 @@ class PizzaViewModel : ViewModel() {
     val currentPizza = MutableStateFlow(Pizza())
 
 
-    fun updateCurrentPizzaState(name: String, price: Double){
-        currentPizza.update {value ->
+    fun updateCurrentPizzaState(name: String, price: Double) {
+        currentPizza.update { value ->
             value.copy(name = name, price = price)
         }
 

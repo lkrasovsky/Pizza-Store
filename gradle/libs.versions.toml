@@ -27,10 +27,10 @@ ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
-retrofit2 = { group ="com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2"}
-retrofit2-json = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit2"}
-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines"}
-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation"}
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2" }
+retrofit2-json = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit2" }
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 
 
 [plugins]

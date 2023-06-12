@@ -39,10 +39,10 @@ fun NavGraph(navController: NavHostController, mainPizzaViewModel: PizzaViewMode
                 navArgument("pizzaName") { type = NavType.StringType },
                 navArgument("pizzaPrice") { type = NavType.FloatType }
             )
-        ) {backStackEntry ->
-                val arguments = requireNotNull(backStackEntry.arguments)
-                val pizzaName = arguments.getString("pizzaName")
-                val pizzaPrice = arguments.getFloat("pizzaPrice")
+        ) { backStackEntry ->
+            val arguments = requireNotNull(backStackEntry.arguments)
+            val pizzaName = arguments.getString("pizzaName")
+            val pizzaPrice = arguments.getFloat("pizzaPrice")
             OrderScreen(navController, pizzaName, pizzaPrice)
         }
     }

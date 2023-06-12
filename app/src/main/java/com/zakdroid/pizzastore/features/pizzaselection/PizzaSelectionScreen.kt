@@ -1,7 +1,6 @@
 package com.zakdroid.pizzastore.features.pizzaselection
 
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -68,12 +67,15 @@ fun PizzaSelectionScreen(
                 DividedCircle(pizzaFlavorBoolean.value)
             }
             if (!pizzaFlavorBoolean.value) {
-                pizzaViewModel.updateCurrentPizzaState(pizza.name,pizza.price)
+                pizzaViewModel.updateCurrentPizzaState(pizza.name, pizza.price)
                 Text(text = currentPizza.name)
                 Text(text = currentPizza.price.toString())
 
             } else if (pizza.name != selectedPizzaName.value) {
-                pizzaViewModel.updateCurrentPizzaState(name = "${pizza.name} ${selectedPizzaName.value}", currentPizza.price)
+                pizzaViewModel.updateCurrentPizzaState(
+                    name = "${pizza.name} ${selectedPizzaName.value}",
+                    currentPizza.price
+                )
                 Text(text = currentPizza.name)
                 Text(text = currentPizza.price.toString())
             } else {
@@ -119,7 +121,7 @@ fun PizzaSelectionScreen(
                                 onClick = {
                                     selectedPizzaPrice.value = item.price
                                     selectedPizzaName.value = item.name
-                                    val newPrice = (pizza.price+item.price)/2
+                                    val newPrice = (pizza.price + item.price) / 2
                                     pizzaViewModel.updateCurrentPizzaState(pizza.name, newPrice)
                                 }
                             )

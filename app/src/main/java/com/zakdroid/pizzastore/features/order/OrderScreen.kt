@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -28,7 +27,7 @@ fun OrderScreen(navController: NavHostController, pizzaName: String?, pizzaPrice
         Column(
             modifier = Modifier
                 .fillMaxHeight()
-            .padding(top = 20.dp),
+                .padding(top = 20.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
@@ -40,7 +39,7 @@ fun OrderScreen(navController: NavHostController, pizzaName: String?, pizzaPrice
                 navController.navigate(
                     route = NavRoutes.Catalog.route,
                     builder = {
-                        popUpTo(NavRoutes.Catalog.route){inclusive = true}
+                        popUpTo(NavRoutes.Catalog.route) { inclusive = true }
                     }
                 )
             }) {

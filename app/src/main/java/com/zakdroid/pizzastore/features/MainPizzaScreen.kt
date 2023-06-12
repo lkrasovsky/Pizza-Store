@@ -7,7 +7,7 @@ import com.zakdroid.pizzastore.navigation.NavGraph
 @Composable
 fun MainPizzaScreen(mainPizzaViewModel: PizzaViewModel) {
 
-        val navController = rememberNavController()
-        NavGraph(navController, mainPizzaViewModel)
+    val navController = rememberNavController()
+    NavGraph(navController, mainPizzaViewModel)
 
 }

@@ -13,7 +13,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.zakdroid.pizzastore.features.MainPizzaScreen
 import com.zakdroid.pizzastore.features.PizzaViewModel
-import com.zakdroid.pizzastore.features.catalog.CatalogScreen
 import com.zakdroid.pizzastore.ui.theme.PizzaStoreTheme
 
 class MainActivity : ComponentActivity() {
